@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'cursive3';
+  src: url('cursive/Cursive.ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+  font-family: 'cloud';
+  src: url('cloude/Cloude_Regular_1.02.otf');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+
+html, body{ 
+
+  font-family: cursive3;
+  text-align: center;
+  color: white;
+  cursor: url('whee/stronglight.png'), auto;
+  caret-color: transparent;
+  height: 100%;
+  margin: 0;
+  background-attachment: fixed;
+  background-image: url(back/blur.jpg);
+  background-size: cover;
+}
+  
+.magic{
+  position: relative;
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+}
+
+
+.home{
+  position: fixed;
+  display: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+  height: 100px;
+}
+
+
+.home :hover{
+  content: url(whee/brokenheart.png);
+  height: 100px;
+  position: fixed;
+  display: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+
+}
+
+.home img{
+  height: 100px;
+}
+
+.home :hover img{
+  height: 100px;
+}
+
+
+
+
+.wrap {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  -webkit-perspective-origin: 50% 100px;
+  perspective-origin: 50% 100px;
+  margin-top: 10%;
+  position: relative;
+  height: 600px;
+  
+  }
+  
+  
+  
+  .cube {
+  width: 400px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin: 0 auto;     
+  -webkit-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  }
+  
+  .cube div {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  
+  }
+
+  .front img{
+    height: 400px;
+  }
+  
+
+  .back img{
+    height: 400px;
+  }
+  
+
+  .left img{
+    height: 400px;
+  }
+  
+  .right img{
+    height: 400px;
+  }
+  
+  .top img{
+    height: 400px;
+  }
+  
+
+  .bottom img{
+    height: 400px;
+  }
+  
+
+  .back {
+  -webkit-transform: translateZ(-200px) rotateY(180deg);
+  transform: translateZ(-200px) rotateY(180deg);
+  background: transparent;
+  opacity: 1;
+
+  }
+  
+  
+  .right {
+  -webkit-transform: rotateY(-270deg) translateX(200px);
+  transform: rotateY(-270deg) translateX(200px);
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  background: transparent;
+  opacity: 1;
+  font-family: cursive3;
+  }
+
+  .left {
+  -webkit-transform: rotateY(270deg) translateX(-200px);
+  transform: rotateY(270deg) translateX(-200px);
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  background: transparent;
+  opacity: 1;
+  }
+  .top {
+  -webkit-transform: rotateX(-90deg) translateY(-200px);
+  transform: rotateX(-90deg) translateY(-200px);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  opacity: 1;
+  }
+  .bottom {
+  -webkit-transform: rotateX(90deg) translateY(200px);
+  transform: rotateX(90deg) translateY(200px);
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  opacity: 1;
+  }
+  .front {
+  -webkit-transform: translateZ(200px);
+  transform: translateZ(200px);
+  background: transparent;
+  opacity: 1;
+  }
+  
+  @-webkit-keyframes spin {
+  from { -webkit-transform: rotateY(0); }
+  to { -webkit-transform: rotateY(360deg); }
+  }
+  
+  @keyframes spin {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); }
+  }
+  
+  .cube:hover {        
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  }
+
+
+
+
+ 
+
+  .description { 
+    display: grid;
+    place-items: center; 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    line-height: 30px;
+    animation: morphing 10s infinite;
+	  overflow: hidden;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+    width: 800px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+		font-family: cloud;
+    font-size: 50px;
+    padding: 20px;
+
+  }
+
+  p{
+    text-align: justify;
+		letter-spacing: 0;
+    padding: 100px;
+    display: inline-block;
+
+  }
+
+
+  .description:hover{
+    animation-play-state: paused;
+  }
+  
+  
+
+  @keyframes morphing {
+		0%, 100% {
+			border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+			box-shadow: 0 -2vmin 4vmin LightPink inset, 0 -4vmin 4vmin MediumPurple inset,
+			0 -2vmin 7vmin purple inset;
+		}
+		25% { 
+			border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+      box-shadow: 0 -2vmin 4vmin LightPink inset, 0 -4vmin 4vmin MediumPurple inset,
+			0 -2vmin 7vmin purple inset;
+		}
+		50% {
+			border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+			box-shadow: 0 -2vmin 4vmin LightPink inset, 0 -4vmin 4vmin MediumPurple inset,
+			0 -2vmin 7vmin purple inset;
+		}
+		75% {
+			border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;	
+      box-shadow: 0 -2vmin 4vmin LightPink inset, 0 -4vmin 4vmin MediumPurple inset,
+			0 -2vmin 7vmin purple inset;
+		}
+	}

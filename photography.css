@@ -1,0 +1,213 @@
+
+@font-face {
+  font-family: 'cloud';
+  src: url('cloude/Cloude_Regular_1.02.ttf');
+        font-weight: normal;
+        font-style: normal;      
+      
+}
+  
+
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+body{
+  background-color: black;
+  cursor: url('whee/target.png'), auto;
+  
+}
+
+
+.home{
+  position: fixed;
+  display: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+  cursor: url('whee/target.png'), auto;
+  height: 100px;
+}
+
+.home :link{
+  cursor: url('whee/target.png'), auto;
+}
+
+.home :active{
+  cursor: url('whee/target.png'), auto;
+}
+
+
+.home :hover{
+  content: url(whee/brokenheart.png);
+  height: 100px;
+  position: fixed;
+  display: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+  cursor: url('whee/target.png'), auto;
+}
+
+.home img{
+  height: 100px;
+}
+
+.home :hover img{
+  height: 100px;
+}
+
+
+
+.container {
+  margin-top: 1%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);    
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.container img{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+
+.cat {
+  width: 110%;
+  margin-left: 35%;
+  margin-top: 10%;
+  position: relative;
+  z-index: 1; 
+  transform: rotate(-5deg);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+
+.sunset {
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 65%;
+  transform: rotate(13deg);
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.flwr {
+  width: 110%;
+  margin-top: 70%;
+  margin-left: -10%;
+  transform: rotate(-10deg);
+  grid-column: 3;
+  grid-row: 1;
+  z-index: -2;
+}
+
+
+.alf {
+  width: 90%;
+  margin-top: -5%;
+  margin-left: 30%;
+  z-index: 2;
+  grid-column: 1;
+  transform: rotate(-6deg);
+  grid-row: 2;
+} 
+
+.crab {
+  width: 100%;
+  margin-left: -5%;
+  margin-top: -60%;
+  transform: rotate(3deg);
+  grid-column: 2;
+  grid-row: 2;
+  z-index: -1;
+}
+
+.bella {
+  width: 100%;
+  margin-top: -10%;
+  margin-left: -25%;
+  transform: rotate(-6deg);
+  z-index: 1;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.nap {
+  width: 110%;
+  margin-top: 10%;
+  margin-left: 10%;
+  transform: rotate(3deg);
+  z-index: 2;
+  grid-column: 1;
+  grid-row: 3;
+  
+}
+
+.cowboy {
+  width: 100%;
+  margin-top: -10%;
+  margin-left: 5%;
+  grid-column: 2;
+  z-index: -1;
+  grid-row: 3;
+}
+
+.maurice {
+  width: 90%;
+  margin-top: -60%;
+  margin-left: -15%;
+  transform: rotate(12deg);
+  grid-column: 3;
+  grid-row: 3;
+  z-index: -2;
+} 
+
+.charles {
+  width: 90%;
+  margin-top: -50%;
+  margin-left: 40%;
+  grid-column: 1;
+  grid-row: 4;
+  z-index: -5;
+}
+
+
+.table {
+  width: 130%;
+  margin-top: -55%;
+  margin-left: -25%;
+  grid-column: 3;
+  grid-row: 4;
+  transform: rotate(-10deg);
+  z-index: -3;
+}
+
+
+.armance {
+  width: 120%;
+  margin-top: -45%;
+  margin-left: 15%;
+  padding-bottom: 10%;
+  grid-column: 2;
+  grid-row: 5;
+  z-index: -4;
+  transform: rotate(7deg);
+}
+
+#myCanvas{
+  font-family: cloud;
+  color: white;
+  position: absolute;
+  z-index: 500;
+}
