@@ -8,7 +8,7 @@ html, body{
 
 
 @font-face {
-  font-family: 'cursive';
+  font-family: 'cursive3';
   src: url('cursive/Cursive.ttf');
         font-weight: normal;
         font-style: normal;
@@ -33,13 +33,23 @@ body{
 
 }
 
+h2{
+  font-family: cloud;
+  font-size: 40px;
+  font-weight: normal;
+  color: rgb(255, 241, 118);
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+
 
 button, p, .typewrite{
   border: none;
   background: none;
   font-family: cloud;
   color: aliceblue;
-  font-size: 45px;
+  font-size: 40px;
   display: block;
   font-style: normal;
   margin: 0;
@@ -118,29 +128,6 @@ button:hover, a:hover, button:link, button:active{
 
 
 
-#overlay{ /* we set all of the properties for our overlay */
-    height:50%;
-    width: 40%;
-    margin: 0;
-    background:transparent;
-    padding:10px;
-    position: absolute;
-    top:10%;
-    left:20%;
-    z-index:1000;
-    display: none;
-    font-size: 45px;
-    text-align: justify;
-    color: white;
-    border-style: dotted;
-}
-
-
-#overlay p{
-  color: white;
-}
-
-
 /* use :target to look for a link to the overlay then we find our mask */
 #overlay:target, #overlay:target + #mask{
     opacity:1;
@@ -191,6 +178,9 @@ button:hover, a:hover, button:link, button:active{
   }
 
 
+
+
+
   .cancel {
     position: absolute;
     width: 100%;
@@ -209,7 +199,7 @@ button:hover, a:hover, button:link, button:active{
 .popup {
 	padding: 10px;
 	background: transparent;
-	width: 690px;
+	width: 800px;
 	box-shadow: 0 0 20px rgb(255, 246, 179, 0.5);
   border-width: 10px;
   border: rgb(255, 246, 179);
@@ -217,7 +207,7 @@ button:hover, a:hover, button:link, button:active{
 	position: absolute;
   z-index: 20;
   top: 30px;
-  left: 700px;
+  left: 600px;
 
   }
 
@@ -241,13 +231,15 @@ button:hover, a:hover, button:link, button:active{
 
   .content {
     max-height: 400px;
-    width: 650px;
+    width: 750px;
     overflow: auto;
   }
 
   .content p {
     font-family: cloud;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
     text-align: justify;
+    line-height: 70%;
+    letter-spacing: 3px;
   }
