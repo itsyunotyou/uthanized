@@ -213,34 +213,43 @@ h2{
 }
  
 
-  p { 
-    display: grid;
-    place-items: center; 
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    line-height: 30px;
-    animation: morphing 10s infinite;
-	  overflow: hidden;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    animation: morphing 10s infinite;
-    width: 800px;
-    height: 400px;
-    color: rgb(255, 255, 255);
-		font-family: cloud;
-    font-size: 50px;
-    padding: 20px;
-
-  }
 
   p{
     text-align: justify;
-		letter-spacing: 0;
-    padding: 100px;
+		letter-spacing: 3px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0;
+    padding-bottom: 0;
     display: inline-block;
+    font-family: cloud;
+    font-size: 40px;
 
   }
 
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .key {
+    flex: 1px;
+    min-width: 25%;
+  }
+
+  .key img{
+    width:75%;
+    height:75%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+  
+  .key img:last-child {
+    display: none;  
+  }
+  .key:hover img:last-child {
+    display: block;  
+  }
+  .key:hover img:first-child {
+    display: none;  
+  }
