@@ -46,6 +46,7 @@ button, p, .typewrite{
   padding: 0;
   text-decoration: none;
   cursor: url('whee/stronglight.png'), auto;
+  letter-spacing: 3px;
 }
 
 p{

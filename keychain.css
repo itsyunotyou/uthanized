@@ -210,6 +210,8 @@ h2{
   font-size: 20px;
   color: rgb(255, 241, 118);
   letter-spacing: 4px;
+  margin-top: 40px;
+  margin-bottom: 5%;
 }
  
 
@@ -217,15 +219,24 @@ h2{
   p{
     text-align: justify;
 		letter-spacing: 3px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 0;
-    padding-bottom: 0;
     display: inline-block;
     font-family: cloud;
     font-size: 40px;
-
+    margin: 3%;
+    opacity: 100%;
   }
+
+
+  .description{
+    box-shadow: 0 0 20px rgb(255, 246, 179, 0.5);
+    border-width: 40px;
+    border: rgb(255, 246, 179);
+    border-style: dashed;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0,  0.7);
+    }
 
   section {
     display: flex;
