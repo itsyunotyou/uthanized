@@ -211,3 +211,78 @@ img {
   position: absolute;
   z-index: 500;
 }
+
+.line1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: cloud;
+  position: relative;
+  z-index: 3;
+  margin-left: -50%;
+  margin-top: -280%;
+}
+
+.line2 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: cloud;
+  position: relative;
+  z-index: 3;
+  margin-left: 270%;
+  margin-top: -330%;
+}
+
+.line3 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: cloud;
+  position: relative;
+  z-index: 1;
+  margin-left: -76%;
+  margin-top: -220%;
+}
+
+.line4 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: cloud;
+  position: relative;
+  z-index: 5;
+  margin-left: 190%;
+  margin-top: -200%;
+}
+
+
+.line5 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: cloud;
+  position: relative;
+  z-index: 5;
+  margin-left: -50%;
+  margin-top: -120%;
+}
+
+.line6 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: cloud;
+  position: relative;
+  z-index: 5;
+  margin-left: 50%;
+  margin-top: -30%;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
