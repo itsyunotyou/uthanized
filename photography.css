@@ -18,7 +18,7 @@ html {
 
 body{
   background-color: black;
-  cursor: url('whee/target.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
   
 }
 
@@ -29,28 +29,28 @@ body{
   z-index: 20;
   top: 20px;
   right: 20px;
-  cursor: url('whee/target.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
   height: 100px;
 }
 
 .home :link{
-  cursor: url('whee/target.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
 }
 
 .home :active{
-  cursor: url('whee/target.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
 }
 
 
 .home :hover{
-  content: url(whee/brokenheart.png);
+  content: url('https://github.com/itsyunotyou/uthanized/blob/5031ca5bdbea9956ebed1396797a1458fd2d40da/whee/brokenheart.png?raw=true');
   height: 100px;
   position: fixed;
   display: absolute;
   z-index: 20;
   top: 20px;
   right: 20px;
-  cursor: url('whee/target.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
 }
 
 .home img{
