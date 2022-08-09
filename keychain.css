@@ -29,7 +29,7 @@ html, body{
   height: 100%;
   margin: 0;
   background-attachment: fixed;
-  background-image: url(back/mesh.jpg);
+  background-image: url('https://github.com/itsyunotyou/uthanized/blob/6b134a16fdde9c6498428990a46b203abbf7156e/back/mesh.JPG?raw=true');
   background-size: cover;
 }
   
@@ -52,7 +52,7 @@ html, body{
 
 
 .home :hover{
-  content: url('https://github.com/itsyunotyou/uthanized/blob/5031ca5bdbea9956ebed1396797a1458fd2d40da/whee/brokenheart.png');
+  content: url('https://github.com/itsyunotyou/uthanized/blob/5031ca5bdbea9956ebed1396797a1458fd2d40da/whee/brokenheart.png?raw=true');
   height: 100px;
   position: fixed;
   display: absolute;
