@@ -35,7 +35,7 @@ body{
 
 h2{
   font-family: cloud;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: normal;
   color: rgb(255, 241, 118);
   letter-spacing: 4px;
@@ -199,7 +199,7 @@ button:hover, a:hover, button:link, button:active{
 .popup {
 	padding: 10px;
 	background: transparent;
-	width: 800px;
+	width: 850px;
 	box-shadow: 0 0 20px rgb(255, 246, 179, 0.5);
   border-width: 10px;
   border: rgb(255, 246, 179);
@@ -207,7 +207,7 @@ button:hover, a:hover, button:link, button:active{
 	position: absolute;
   z-index: 20;
   top: 30px;
-  left: 600px;
+  left: 500px;
 
   }
 
@@ -231,13 +231,13 @@ button:hover, a:hover, button:link, button:active{
 
   .content {
     max-height: 400px;
-    width: 750px;
+    width: 800px;
     overflow: auto;
   }
 
   .content p {
     font-family: cloud;
-    font-size: 35px;
+    font-size: 32px;
     color: white;
     text-align: justify;
     line-height: 70%;
