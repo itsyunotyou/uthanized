@@ -1,6 +1,6 @@
 html, body{
   margin:0;
-  cursor: url('whee/light.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
   caret-color: transparent;
   overflow: hidden;
 }
@@ -22,7 +22,7 @@ html, body{
       }
   
 body{
-    background-image: url(https://github.com/itsyunotyou/uthanized/blob/cdd6469d48afaf48e675ca82dee6ee1585a7f3a4/back/grass.JPG?raw=true);
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/cdd6469d48afaf48e675ca82dee6ee1585a7f3a4/back/grass.JPG?raw=true');
     margin: 0;
     /* Full height */
     height: 100%;
@@ -55,7 +55,7 @@ button, p, .typewrite{
   margin: 0;
   padding: 0;
   text-decoration: none;
-  cursor: url('whee/stronglight.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
   letter-spacing: 3px;
 }
 
@@ -85,7 +85,7 @@ a, a:hover {
 
 button:hover, a:hover, button:link, button:active{
   color: rgb(255, 246, 179);
-  cursor: url('whee/stronglight.png'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
 }
 
 
@@ -109,7 +109,7 @@ button:hover, a:hover, button:link, button:active{
 #tv_container:after {
   content: '';
   display: block;
-  background: url('back/tv.png') no-repeat top left transparent;
+  background: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/back/tv.png?raw=true') no-repeat top left transparent;
   width: 500%;
   height: 500%;
   left: -40px;
@@ -221,7 +221,7 @@ button:hover, a:hover, button:link, button:active{
     font-size: 50px;
     text-decoration: none;
     color: white;
-    cursor: url('whee/light.png'), auto;
+    cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 
   }
 
