@@ -17,7 +17,6 @@
 
 	font-family: cursive3;
 	text-align: center;
-	color: white;
 	cursor: url('whee/stronglight.png'), auto;
 	caret-color: transparent;
 	height: 100%;
@@ -41,10 +40,7 @@
 	padding: 0;
 }
 
-#drake img{
-	width: 100%;
-}
-  
+
 
 .poem p{
 	line-height: 10px;
@@ -130,3 +126,4 @@
         display: none;
     }
 }
+
