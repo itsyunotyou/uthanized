@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+
+.App {
+  font-family: 'Patrick Hand SC', cursive;
+  text-align: center;
+}
+
+svg {
+  height: 80vh;
+  width: 80vw;
+}
+
+.heading {
+  font-size: 48px;
+  color: #281616;
+}
+
+.petal:hover {
+  fill: #C1A1A1;
+  transition: 0.2s ease;
+  -webkit-transition: 0.3s ease;
+}
