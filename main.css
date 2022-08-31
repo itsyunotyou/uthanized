@@ -243,3 +243,16 @@ button:hover, a:hover, button:link, button:active{
     line-height: 70%;
     letter-spacing: 3px;
   }
+
+
+  footer{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    font-family: cloud;
+    font-size: 32px;
+    color: white;
+    text-align: justify;
+    letter-spacing: 3px;
+  }
