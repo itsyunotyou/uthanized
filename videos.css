@@ -161,10 +161,11 @@ html, body{
     }
 
     footer{
-      position: absolute;
+      position: relative;
+      text-align: right;
       z-index: 10;
       bottom: 0;
-      right: 0;
+      left: 15px;
       font-family: cloud;
       font-size: 32px;
       color: white;

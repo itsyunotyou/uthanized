@@ -249,7 +249,7 @@ button:hover, a:hover, button:link, button:active{
     position: absolute;
     z-index: 10;
     bottom: 0;
-    right: 0;
+    right: 15px;
     font-family: cloud;
     font-size: 32px;
     color: white;
