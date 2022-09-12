@@ -212,6 +212,11 @@ img {
   z-index: 500;
 }
 
+@media (min-width:320px){
+  .line1{
+    font-size: 20px;
+  }
+}
 .line1 {
   color: white;
   font-size: 40px;
@@ -289,10 +294,9 @@ p {
 
 footer{
   position: relative;
-  text-align: right;
+  float: right;
   z-index: 10;
   bottom: 0;
-  left: 15px;
   font-family: cloud;
   font-size: 32px;
   color: white;
