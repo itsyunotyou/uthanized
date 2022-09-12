@@ -1,0 +1,286 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'cloud';
+	src: url('cloude/Cloude_Regular_1.02.otf');
+		  font-weight: normal;
+		  font-style: normal;
+  }
+  
+
+body{
+    background-color: #ffffff;
+}
+
+.poem{
+    position: absolute;
+    z-index: -20;
+    height: 300px;
+    width: 100vw;
+}
+.poem p{
+	line-height: 3px;
+	text-align: left;
+    margin-top: 2%;
+	margin-left: 2%;
+}
+.poem p a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-family: cloud;
+	font-size: 50px;
+	text-align: left;
+	letter-spacing: 3px;
+}
+
+.giphy-embed{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes blink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .typewrite{
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    border: none;
+    background: none;
+    font-family: cloud;
+    font-size: 40px;
+    display: block;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
+    letter-spacing: 3px;
+  }
+  .typewrite:after {
+    content: '_';
+    -webkit-animation: blink 400ms linear infinite alternate;
+    animation: blink 400ms linear infinite alternate;
+  }
+  
+
+
+.popup1{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/alarm.png?raw=true');
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 4;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup2{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/amber.png?raw=true');
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-30%,-30%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup3{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/asshole.png?raw=true');
+    background-size: cover;
+    height: 400px;
+    width: 700px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-10%,-100%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup4{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/dance.png?raw=true');
+    background-size: cover;
+    height: 250px;
+    width: 350px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-100%, 20%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.popup5{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/link.png?raw=true');
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(36%, -10%);
+    left: 50%;
+    top: 50%;
+    display: none;
+}
+
+
+.popup6{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/heart.png?raw=true');
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-80%, -90%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup7{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/luv.png?raw=true');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(52%, -90%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+
+.popup8{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/nonumbers.png?raw=true');
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-200%, -120%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+
+.popup9{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/sorry.png?raw=true');
+    background-size: cover;
+    height: 300px;
+    width: 570px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup10{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/stars.png?raw=true');
+    background-size: cover;
+    height: 200px;
+    width: 380px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(20%, 70%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+
+.popup11{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/whereyouat.png?raw=true');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 20;
+    transform: translate(-10%, -50%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+
+.popup12{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/uranus.png?raw=true');
+    background-size: cover;
+    height: 300px;
+    width: 570px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-120%, -50%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+
+button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-family: cloud;
+    font-size: 70px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
