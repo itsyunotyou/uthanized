@@ -1,6 +1,7 @@
 html, body{
   margin:0;
   cursor: url('whee/target.png'), auto;
+  background-color: black;
 }
 
 @font-face {
