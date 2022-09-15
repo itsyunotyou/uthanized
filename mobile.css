@@ -1,0 +1,64 @@
+html, body{
+    margin:0;
+    overflow: hidden;
+    background-color: black;
+    
+  }
+  
+  
+@font-face {
+font-family: 'cursive3';
+src: url('cursive/Cursive.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+@font-face {
+font-family: 'cloud';
+src: url('cloude/Cloude_Regular_1.02.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+@keyframes blink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+    
+.typewrite{
+    border: none;
+    background: none;
+    font-family: cloud;
+    font-size: 120px;
+    display: block;
+    font-style: normal;
+    margin: 0;
+    text-decoration: none;
+    cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
+    letter-spacing: 3px;
+    color: rgb(247, 255, 205);
+    padding: 5%;
+}
+.typewrite:after {
+    content: '_';
+    -webkit-animation: blink 400ms linear infinite alternate;
+    animation: blink 400ms linear infinite alternate;
+}
+        
+footer{
+    position: fixed;
+    float: right;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    font-family: cloud;
+    font-size: 32px;
+    color: white;
+    text-align: right;
+    letter-spacing: 3px;
+}  
+
+
+.bin img{
+    height:80vh;
+}
