@@ -37,7 +37,8 @@ src: url('cloude/Cloude_Regular_1.02.ttf');
     cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
     letter-spacing: 3px;
     color: black;
-    padding: 5%;
+    padding-top: 3vh;
+    padding-left: 3vw;
 }
 .typewrite:after {
     content: '_';
@@ -49,7 +50,7 @@ footer{
     position: fixed;
     float: right;
     z-index: 10;
-    right: 0;
+    right: 1vw;
     bottom: 0;
     font-family: cloud;
     font-size: 40px;
