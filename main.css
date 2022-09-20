@@ -84,8 +84,8 @@ p{
   cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
   letter-spacing: 3px;
   color: rgb(247, 255, 205);
-  padding-top: 7vh;
-  padding-left: 7vw;
+  padding-top: 5vh;
+  padding-left: 5vw;
 }
 .typewrite:after {
   content: '_';
