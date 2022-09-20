@@ -135,7 +135,6 @@ button:hover, a:hover, button:link, button:active{
 #tv_container:after {
   content: '';
   display: block;
-  background: url('https://github.com/itsyunotyou/uthanized/blob/15984fd9881ab7f53c88b85f863a4bf8c8645ddb/back/tv.png?raw=true') no-repeat top left transparent;
   width: 500%;
   height: 500%;
   left: -40px;
