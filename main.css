@@ -144,6 +144,18 @@ button:hover, a:hover, button:link, button:active{
   position: absolute;
   z-index: 10;
 }
+
+
+.no-webp #tv_container:after {
+  background-image: url("back/tv.png");
+}
+
+.webp #tv_container:after{
+  background-image: url("back/tv.webp");
+}
+
+
+
 #tv_container video {
   position: absolute;
   top: -100px; /* Adjust top position */
