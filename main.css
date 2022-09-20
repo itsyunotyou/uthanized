@@ -90,6 +90,7 @@ p{
 
 a, a:hover {
   text-decoration: none;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
  }
 
 button:hover, a:hover, button:link, button:active{
