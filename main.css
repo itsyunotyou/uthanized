@@ -106,7 +106,8 @@ button:hover, a:hover, button:link, button:active{
 
 
 .menu{
-  padding: 5%;
+  padding-top: 5vh;
+  padding-left: 5vw;
 }
 
 .typewrite :hover{
