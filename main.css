@@ -19,7 +19,7 @@ html, body{
 }
 
 .no-webp html, body {
-  background-image: url("back/grass.webp");
+  background-image: url("back/grass.JPG");
 }
 
 .webp html, body{
