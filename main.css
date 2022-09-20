@@ -130,14 +130,14 @@ button:hover, a:hover, button:link, button:active{
   width: 500%;
   height: 500%;
   left: -40px;
-  top: -780px;
+  top: -730px;
   transform: scale(0.26);
   position: absolute;
   z-index: 10;
 }
 #tv_container video {
   position: absolute;
-  top: -180px; /* Adjust top position */
+  top: -130px; /* Adjust top position */
   left: 720px; /* Adjust left position */
   z-index: 5;
 
