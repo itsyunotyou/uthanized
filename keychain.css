@@ -29,9 +29,16 @@ html, body{
   height: 100%;
   margin: 0;
   background-attachment: fixed;
-  background-image: url('https://github.com/itsyunotyou/uthanized/blob/2c595a9ea9ec9185bbf85c6f14157d558a087554/back/mesh.JPG?raw=true');
   background-size: cover;
   background-color: black;
+}
+
+.no-webp html, body {
+  background-image: url("back/mesh.JPG");
+}
+
+.webp html, body{
+  background-image: url("back/mesh.webp");
 }
   
 .magic{
