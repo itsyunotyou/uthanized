@@ -23,16 +23,18 @@ html, body{
 @font-face {
   font-family: 'cursive3';
   src: url('cursive/Cursive.ttf');
-        font-weight: normal;
-        font-style: normal;
-      }
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'cloud';
   src: url('cloude/Cloude_Regular_1.02.ttf');
-        font-weight: normal;
-        font-style: normal;
-      }
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
   
 
 
