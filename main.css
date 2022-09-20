@@ -7,7 +7,6 @@ html, body{
   width: 100vw;
   margin: 0;
   background-attachment: fixed;
-  background-image: url('https://github.com/itsyunotyou/uthanized/blob/15984fd9881ab7f53c88b85f863a4bf8c8645ddb/back/grass.JPG?raw=true');
   background-size: cover;
   background-color: black;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -17,6 +16,14 @@ html, body{
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; 
   
+}
+
+.no-webp html, body {
+  background-image: url("back/grass.webp");
+}
+
+.webp html, body{
+  background-image: url("back/grass.webp");
 }
 
 
