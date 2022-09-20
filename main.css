@@ -10,6 +10,12 @@ html, body{
   background-image: url('https://github.com/itsyunotyou/uthanized/blob/cdd6469d48afaf48e675ca82dee6ee1585a7f3a4/back/grass.JPG?raw=true');
   background-size: cover;
   background-color: black;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; 
   
 }
 
