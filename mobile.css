@@ -39,7 +39,7 @@ src: url('cloude/Cloude_Regular_1.02.ttf');
     cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
     letter-spacing: 3px;
     color: rgb(247, 255, 205);
-    padding-top: 3vh;
+    padding-top: 1vh;
     padding-left: 3vw;
 }
 .typewrite:after {
