@@ -7,7 +7,7 @@ html, body{
   width: 100vw;
   margin: 0;
   background-attachment: fixed;
-  background-image: url('https://github.com/itsyunotyou/uthanized/blob/cdd6469d48afaf48e675ca82dee6ee1585a7f3a4/back/grass.JPG?raw=true');
+  background-image: url('https://github.com/itsyunotyou/uthanized/blob/15984fd9881ab7f53c88b85f863a4bf8c8645ddb/back/grass.JPG?raw=true');
   background-size: cover;
   background-color: black;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -126,7 +126,7 @@ button:hover, a:hover, button:link, button:active{
 #tv_container:after {
   content: '';
   display: block;
-  background: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/back/tv.png?raw=true') no-repeat top left transparent;
+  background: url('https://github.com/itsyunotyou/uthanized/blob/15984fd9881ab7f53c88b85f863a4bf8c8645ddb/back/tv.png?raw=true') no-repeat top left transparent;
   width: 500%;
   height: 500%;
   left: -40px;
