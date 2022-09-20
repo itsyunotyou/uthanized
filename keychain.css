@@ -21,24 +21,26 @@
 
 
 html, body{ 
-
   font-family: cursive3;
   text-align: center;
   color: white;
   caret-color: transparent;
   height: 100%;
   margin: 0;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: black;
 }
 
 .no-webp html, body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
   background-image: url("back/mesh.JPG");
 }
 
 .webp html, body{
   background-image: url("back/mesh.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
 }
   
 .magic{
