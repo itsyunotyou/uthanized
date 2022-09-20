@@ -37,11 +37,12 @@ h2{
   color: rgb(255, 241, 118);
   letter-spacing: 4px;
   margin: 0;
+  padding-left: 0vw;
 }
 
 
 
-button, p, .typewrite{
+button, p{
   border: none;
   background: none;
   font-family: cloud;
@@ -66,8 +67,19 @@ p{
 }
 
 .typewrite{
+  border: none;
+  background: none;
+  font-family: cloud;
+  font-size: 40px;
+  display: block;
+  font-style: normal;
+  margin: 0;
+  text-decoration: none;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
+  letter-spacing: 3px;
   color: rgb(247, 255, 205);
-  padding: 5%;
+  padding-top: 5vh;
+  padding-left: 5vw;
 }
 .typewrite:after {
   content: '_';
@@ -243,13 +255,14 @@ button:hover, a:hover, button:link, button:active{
 
 
   footer{
-    position: relative;
+    position: absolute;
     float: right;
     z-index: 10;
     bottom: 0;
+    right: 0.5vw;
     font-family: cloud;
     font-size: 32px;
     color: white;
-    text-align: justify;
+    text-align: right;
     letter-spacing: 3px;
   }
