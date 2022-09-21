@@ -6,9 +6,6 @@ html, body{
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: black;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -20,10 +17,16 @@ html, body{
 
 .no-webp html, body {
   background-image: url("back/grass.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
 }
 
 .webp html, body{
   background-image: url("back/grass.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
 }
 
 
@@ -135,29 +138,18 @@ button:hover, a:hover, button:link, button:active{
 #tv_container:after {
   content: '';
   display: block;
+  background: url('https://github.com/itsyunotyou/uthanized/blob/15984fd9881ab7f53c88b85f863a4bf8c8645ddb/back/tv.png?raw=true') no-repeat top left transparent;
   width: 500%;
   height: 500%;
   left: -40px;
-  top: -7000px;
+  top: -730px;
   transform: scale(0.26);
   position: absolute;
   z-index: 10;
 }
-
-
-.no-webp #tv_container:after {
-  background-image: url("back/tv.png");
-}
-
-.webp #tv_container:after{
-  background-image: url("back/tv.webp");
-}
-
-
-
 #tv_container video {
   position: absolute;
-  top: -100px; /* Adjust top position */
+  top: -130px; /* Adjust top position */
   left: 720px; /* Adjust left position */
   z-index: 5;
 
