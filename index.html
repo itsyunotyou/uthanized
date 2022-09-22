@@ -4,8 +4,26 @@
         <link rel="stylesheet" href="main.css"></link>
       </head>
     <body> 
+
+    <div id="load">
+
+    </div>
       
-      
+    <div id="mobile">
+      <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "Please dont access me on mobile" ]'>
+        <span class="wrap"></span>
+      </a>
+
+      <div class="bin"> 
+        <picture>
+          <source type="image/webp" srcset="whee/bin.webp">
+          <source type="image/png" srcset="whee/bin.png">
+          <img src="whee/bin.png">
+        </picture>
+      </div>
+    </div>
+
+    <div id="contents">
 
       <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "what makes u u?", "what makes u u?" ]'>
           <span class="wrap"></span>
@@ -21,21 +39,18 @@
           </div>
         </div>
       </div>
-      
-    </div>
 
       <div class="menu">
           
-          <h2>Projects...</h2>
-          <a href="sleeping"><button>Sleeping Through Summer (2021)</button></a>
-          <a href="tv"><button>The TV Is Always On (2018-2021)</button></a>
-          <a href="omamori"><button>Lucky Charms (2021-)</button></a>
-          <a href="test"><button>Bits and Bytes of Love (WIP)</button></a>
-          <a href="daddy"><button>COMING SOON</button></a>
-          <a href="love"><button>COMING SOON</button></a>
-          
-          <a href="freelance/workportfolio.pdf"><button>|| Freelance Work ||</button></a>
-        </div>
+        <h2>Projects...</h2>
+        <a href="sleeping"><button>Sleeping Through Summer (2021)</button></a>
+        <a href="tv"><button>The TV Is Always On (2018-2021)</button></a>
+        <a href="omamori"><button>Lucky Charms (2021-)</button></a>
+        <a href="test"><button>Bits and Bytes of Love (WIP)</button></a>
+        <a href="daddy"><button>COMING SOON</button></a>
+        <a href="love"><button>COMING SOON</button></a>
+        
+        <a href="freelance/workportfolio.pdf"><button>|| Freelance Work ||</button></a>
 
       </div>
     
@@ -52,6 +67,10 @@
           <img src="whee/wet.png">
         </picture>
       </div>
+
+    </div>
+
+
       
       <footer>&copy; Copyright 2022, uthanized </footer>
 
@@ -68,26 +87,19 @@
             navigator.userAgent.match(/Windows Phone/i)
    
           ) {
-            document.location = "mobile";
+            document.getElementById('load').style.visibility="hidden";
+            document.getElementById('contents').style.visibility="hidden";
+            document.getElementById('mobile').style.visibility="visible";
           } 
           
           
           else {
-          document.location = "index";
+            document.getElementById('load').style.visibility="hidden";
+              document.getElementById('contents').style.visibility="visible";
+              document.getElementById('mobile').style.visibility="hidden";
         }
       
-        document.onreadystatechange = function () {
-        var state = document.readyState
-        if (state == 'interactive') {
-            document.getElementById('contents').style.visibility="hidden";
-        } else if (state == 'complete') {
-            setTimeout(function(){
-              document.getElementById('interactive');
-              document.getElementById('load').style.visibility="hidden";
-              document.getElementById('contents').style.visibility="visible";
-            },1000);
-        }
-      }
+
       </script>
       
 
