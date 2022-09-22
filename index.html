@@ -61,22 +61,7 @@
       <script src='main.js'></script>
 
       <script type="text/javascript">
-
-      
-        document.onreadystatechange = function () {
-        var state = document.readyState
-        if (state == 'interactive') {
-            document.getElementById('contents').style.visibility="hidden";
-        } else if (state == 'complete') {
-            setTimeout(function(){
-              document.getElementById('interactive');
-              document.getElementById('load').style.visibility="hidden";
-              document.getElementById('contents').style.visibility="visible";
-            },1000);
-            }
-        }
-
-        if (navigator.userAgent.match(/Android/i) ||
+          if (navigator.userAgent.match(/Android/i) ||
             navigator.userAgent.match(/webOS/i) ||
             navigator.userAgent.match(/iPhone/i) ||
             navigator.userAgent.match(/iPad/i) ||
@@ -91,7 +76,22 @@
           
           else {
           document.location = "index";
+          document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.visibility="hidden";
+        } else if (state == 'complete') {
+            setTimeout(function(){
+              document.getElementById('interactive');
+              document.getElementById('load').style.visibility="hidden";
+              document.getElementById('contents').style.visibility="visible";
+            },1000);
+            }
         }
+
+        }
+      
+
       </script>
       
 
