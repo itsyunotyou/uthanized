@@ -187,7 +187,7 @@ html, body{
     }
 
     footer{
-      position: relative;
+      position: fixed;
       float: right;
       z-index: 10;
       bottom: 0;
