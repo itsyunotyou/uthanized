@@ -289,6 +289,10 @@ button:hover, a:hover, button:link, button:active{
 
   #load{
     width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height:100%;
     position:fixed;
     z-index:9999;
