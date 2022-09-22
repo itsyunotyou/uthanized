@@ -5,7 +5,7 @@
       </head>
     <body> 
       
-      
+      <div id="load"></div>
 
       <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "what makes u u?", "what makes u u?" ]'>
           <span class="wrap"></span>
@@ -76,6 +76,18 @@
           document.location = "index";
         }
       
+        document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.visibility="hidden";
+        } else if (state == 'complete') {
+            setTimeout(function(){
+              document.getElementById('interactive');
+              document.getElementById('load').style.visibility="hidden";
+              document.getElementById('contents').style.visibility="visible";
+            },1000);
+            }
+        }
       </script>
       
 
