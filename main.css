@@ -88,7 +88,7 @@ p{
   border: none;
   background: none;
   font-family: cloud;
-  font-size: 40px;
+  font-size: 2vw;
   display: block;
   font-style: normal;
   margin: 0;
@@ -266,7 +266,7 @@ button:hover, a:hover, button:link, button:active{
 
   .content p {
     font-family: cloud;
-    font-size: 32px;
+    font-size: 1vw;
     color: white;
     text-align: justify;
     line-height: 70%;
@@ -281,7 +281,7 @@ button:hover, a:hover, button:link, button:active{
     bottom: 0;
     right: 0.5vw;
     font-family: cloud;
-    font-size: 2vw;
+    font-size: 1vw;
     color: white;
     text-align: right;
     letter-spacing: 3px;
