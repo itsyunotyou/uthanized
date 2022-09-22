@@ -298,3 +298,16 @@ button:hover, a:hover, button:link, button:active{
     z-index:9999;
     background:url("whee/bin.png") no-repeat center center rgba(0,0,0,0.25)
 }
+
+
+.bin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bin img{
+  height:80vh;
+  
+}
