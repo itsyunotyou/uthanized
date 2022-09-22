@@ -10,7 +10,6 @@
 
 html {
   overflow:   scroll;
-  background-color: black;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -18,7 +17,6 @@ html {
 }
 
 body{
-  background-color: black;
   cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
   
 }
