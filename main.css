@@ -15,6 +15,9 @@ html, body{
   
 }
 
+#contents{
+  position: absolute;
+}
 .no-webp html, body {
   background-image: url("back/grass.JPG");
   background-attachment: fixed;
