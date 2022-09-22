@@ -287,6 +287,8 @@ button:hover, a:hover, button:link, button:active{
     letter-spacing: 3px;
   }
 
+  
+
   #load{
     width:100%;
     display: flex;
