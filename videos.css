@@ -1,6 +1,5 @@
 html, body{
   margin:0;
-  cursor: url('whee/target.png'), auto;
   background-color: black;
 }
 
@@ -30,16 +29,13 @@ html, body{
   z-index: 20;
   top: 20px;
   right: 20px;
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/3b4eca557d423b5689cae77c6f8012d3044257ff/whee/target.png?raw=true'), auto;
   height: 100px;
 }
 
 .home :link{
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/3b4eca557d423b5689cae77c6f8012d3044257ff/whee/target.png?raw=true'), auto;
 }
 
 .home :active{
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/3b4eca557d423b5689cae77c6f8012d3044257ff/whee/target.png?raw=true'), auto;
 }
 
 
@@ -51,7 +47,6 @@ html, body{
   z-index: 20;
   top: 20px;
   right: 20px;
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/3b4eca557d423b5689cae77c6f8012d3044257ff/whee/target.png?raw=true'), auto;
 }
 
 
