@@ -5,73 +5,61 @@
       </head>
     <body> 
       
-      <div id="load"></div>
-      <div id="mobile">
-        <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "Please dont access me on mobile" ]'>
+      
+
+      <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "what makes u u?", "what makes u u?" ]'>
           <span class="wrap"></span>
       </a>
-  
-        <div class="bin"> 
-          <picture>
-            <source type="image/webp" srcset="whee/bin.webp">
-            <source type="image/png" srcset="whee/bin.png">
-            <img src="whee/bin.png">
-          </picture>
-        </div>
-      <div id="contents">
-        <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "what makes u u?", "what makes u u?" ]'>
-          <span class="wrap"></span>
-        </a>
 
-        <div id="popup1" class="overlay">
-          <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>u is an interdisciplinary designer, currently based in London, but often wandering somewhere in-between - academically, culturally, and creatively. The goal is to push the boundaries of storytelling and digital technology by fusing them together. Happy to live in a world where u can virtually self-learn anything
-        
-        This website was built through GitHub Pages with self-learnt HTML, CSS, and JavaScript with the help of the Internet.</p>
-            </div>
-          </div>
-        </div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>u is an interdisciplinary designer, currently based in London, but often wandering somewhere in-between - academically, culturally, and creatively. The goal is to push the boundaries of storytelling and digital technology by fusing them together. Happy to live in a world where u can virtually self-learn anything
       
-        <div class="menu">
-            
-            <h2>Projects...</h2>
-            <a href="sleeping"><button>Sleeping Through Summer (2021)</button></a>
-            <a href="tv"><button>The TV Is Always On (2018-2021)</button></a>
-            <a href="omamori"><button>Lucky Charms (2021-)</button></a>
-            <a href="test"><button>Bits and Bytes of Love (WIP)</button></a>
-            <a href="daddy"><button>COMING SOON</button></a>
-            <a href="love"><button>COMING SOON</button></a>
-            
-            <a href="freelance/workportfolio.pdf"><button>|| Freelance Work ||</button></a>
+      This website was built through GitHub Pages with self-learnt HTML, CSS, and JavaScript with the help of the Internet.</p>
           </div>
+        </div>
+      </div>
+      
+    </div>
 
-    
-    
-          <div id="tv_container">
-            <video height="170" autoplay loop>
-                <source src="https://github.com/itsyunotyou/uthanized/blob/15984fd9881ab7f53c88b85f863a4bf8c8645ddb/videos/shower.mp4?raw=true" type="video/mp4" />
-            </video>
-          </div>
+      <div class="menu">
+          
+          <h2>Projects...</h2>
+          <a href="sleeping"><button>Sleeping Through Summer (2021)</button></a>
+          <a href="tv"><button>The TV Is Always On (2018-2021)</button></a>
+          <a href="omamori"><button>Lucky Charms (2021-)</button></a>
+          <a href="test"><button>Bits and Bytes of Love (WIP)</button></a>
+          <a href="daddy"><button>COMING SOON</button></a>
+          <a href="love"><button>COMING SOON</button></a>
+          
+          <a href="freelance/workportfolio.pdf"><button>|| Freelance Work ||</button></a>
+        </div>
 
-          <div class="wet">
-            <picture>
-              <source type="image/webp" srcset="whee/wet.webp">
-              <source type="image/png" srcset="whee/wet.png">
-              <img src="whee/wet.png">
-            </picture>
-          </div>
+      </div>
+    
+      <div id="tv_container">
+        <video height="170" autoplay loop>
+            <source src="https://github.com/itsyunotyou/uthanized/blob/15984fd9881ab7f53c88b85f863a4bf8c8645ddb/videos/shower.mp4?raw=true" type="video/mp4" />
+        </video>
       </div>
 
-      
+      <div class="wet">
+        <picture>
+          <source type="image/webp" srcset="whee/wet.webp">
+          <source type="image/png" srcset="whee/wet.png">
+          <img src="whee/wet.png">
+        </picture>
+      </div>
       
       <footer>&copy; Copyright 2022, uthanized </footer>
 
       <script src='main.js'></script>
 
       <script type="text/javascript">
-          if (navigator.userAgent.match(/Android/i) ||
+
+        if (navigator.userAgent.match(/Android/i) ||
             navigator.userAgent.match(/webOS/i) ||
             navigator.userAgent.match(/iPhone/i) ||
             navigator.userAgent.match(/iPad/i) ||
@@ -80,22 +68,26 @@
             navigator.userAgent.match(/Windows Phone/i)
    
           ) {
-              document.getElementById('load').style.visibility="hidden";
-              document.getElementById('mobile').style.visibility="visible";
-              document.getElementById('contents').style.visibility="hidden";
+            document.location = "mobile";
           } 
           
           
           else {
-   
-              document.getElementById('load').style.visibility="hidden";
-              document.getElementById('mobile').style.visibility="hidden";
-              document.getElementById('contents').style.visibility="visible";
-
-              }
-
+          document.location = "index";
+        }
       
-
+        document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.visibility="hidden";
+        } else if (state == 'complete') {
+            setTimeout(function(){
+              document.getElementById('interactive');
+              document.getElementById('load').style.visibility="hidden";
+              document.getElementById('contents').style.visibility="visible";
+            },1000);
+        }
+      }
       </script>
       
 
