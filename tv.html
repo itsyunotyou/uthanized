@@ -7,6 +7,8 @@
     
     <body>
 
+        <div id="load"></div>
+
         <div class = "home"><a href="index"><img src="https://github.com/itsyunotyou/uthanized/blob/5d14c2cfe78c80fe4da01cd6f6e670a0b7e8c361/whee/heart.png?raw=true" alt=""></a></div>
 
 
@@ -149,7 +151,21 @@
         </div>
 
         
+        <script>    
         
+        document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.visibility="hidden";
+        } else if (state == 'complete') {
+            setTimeout(function(){
+              document.getElementById('interactive');
+              document.getElementById('load').style.visibility="hidden";
+              document.getElementById('contents').style.visibility="visible";
+            },1000);
+            }
+        }
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="videos.js"></script>
 
