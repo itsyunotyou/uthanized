@@ -6,6 +6,18 @@
     <body> 
       
       <div id="load"></div>
+      <div id="mobile">
+        <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "Please dont access me on mobile" ]'>
+          <span class="wrap"></span>
+      </a>
+  
+        <div class="bin"> 
+          <picture>
+            <source type="image/webp" srcset="whee/bin.webp">
+            <source type="image/png" srcset="whee/bin.png">
+            <img src="whee/bin.png">
+          </picture>
+        </div>
       <div id="contents">
         <a href="#popup1" class="typewrite" data-period="2000" data-type='[ "what makes u u?", "what makes u u?" ]'>
           <span class="wrap"></span>
@@ -70,12 +82,16 @@
             navigator.userAgent.match(/Windows Phone/i)
    
           ) {
-            document.location = "mobile";
+            setTimeout(function(){
+              document.getElementById('load').style.visibility="hidden";
+              document.getElementById('contents').style.visibility="hidden";
+              document.getElementById('mobile').style.visibility="visible";
+            },1000);
           } 
           
           
           else {
-          document.location = "index";
+
           document.onreadystatechange = function () {
         var state = document.readyState
         if (state == 'interactive') {
@@ -84,6 +100,7 @@
             setTimeout(function(){
               document.getElementById('interactive');
               document.getElementById('load').style.visibility="hidden";
+              document.getElementById('mobile').style.visibility="hidden";
               document.getElementById('contents').style.visibility="visible";
             },1000);
             }
