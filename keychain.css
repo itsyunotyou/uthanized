@@ -27,6 +27,12 @@ html, body{
   caret-color: transparent;
   height: 100%;
   margin: 0;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 .no-webp html, body {
