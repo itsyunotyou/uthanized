@@ -276,6 +276,25 @@ button:hover, a:hover, button:link, button:active{
     letter-spacing: 1px;
   }
 
+  @media screen and (min-width: 320px) and (max-width:801px) {
+    footer{
+      font-size: 8vw;
+      right: 2vw;
+    }
+
+    .typewrite{
+      border: none;
+      background: none;
+      font-style: normal;
+      margin: 0;
+      text-decoration: none;
+      font-family: cloud;
+      padding-top: 2vh;
+      padding-left: 2vw;
+      font-size: 10vw;
+    }
+  }
+
   
   @media screen and (min-width:801px) {
     footer{
@@ -305,25 +324,6 @@ button:hover, a:hover, button:link, button:active{
       color: rgb(247, 255, 205);
       padding-top: 5vh;
       padding-left: 2vw;
-    }
-  }
-
-  @media screen and (min-width: 320px) and (max-width:801px) {
-    footer{
-      font-size: 8vw;
-      right: 2vw;
-    }
-
-    .typewrite{
-      border: none;
-      background: none;
-      font-style: normal;
-      margin: 0;
-      text-decoration: none;
-      font-family: cloud;
-      padding-top: 2vh;
-      padding-left: 2vw;
-      font-size: 10vw;
     }
   }
 
