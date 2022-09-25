@@ -122,7 +122,7 @@ button:hover, a:hover, button:link, button:active{
 
 .menu{
   padding-top: 5vh;
-  padding-left: 5vw;
+  padding-left: 2vw;
 }
 
 .typewrite :hover{
@@ -282,7 +282,7 @@ button:hover, a:hover, button:link, button:active{
     float: right;
     z-index: 10;
     bottom: 0;
-    right: 0.5vw;
+    right: 2vw;
     font-family: cloud;
     font-size: 2vw;
     color: white;
@@ -290,7 +290,7 @@ button:hover, a:hover, button:link, button:active{
     letter-spacing: 3px;
   }
 
-  
+ 
 
   #load{
     width:100%;
