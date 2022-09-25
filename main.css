@@ -308,7 +308,7 @@ button:hover, a:hover, button:link, button:active{
     }
   }
 
-  @media (max-width:801px) {
+  @media (min-width:320px) {
     footer{
       font-size: 8vw;
       right: 2vw;
