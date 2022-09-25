@@ -290,12 +290,40 @@ button:hover, a:hover, button:link, button:active{
     text-align: right;
     letter-spacing: 3px;
     }
+
+    .typewrite{
+      border: none;
+      background: none;
+      font-family: cloud;
+      font-size: 3vw;
+      display: block;
+      font-style: normal;
+      margin: 0;
+      text-decoration: none;
+      cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
+      letter-spacing: 3px;
+      color: rgb(247, 255, 205);
+      padding-top: 5vh;
+      padding-left: 5vw;
+    }
   }
 
   @media (min-width:320px) {
     footer{
-      font-size: 2vh;
-      right: 2vh;
+      font-size: 8vw;
+      right: 2vw;
+    }
+
+    .typewrite{
+      border: none;
+      background: none;
+      font-style: normal;
+      margin: 0;
+      text-decoration: none;
+      font-family: cloud;
+      padding-top: 2vh;
+      padding-left: 2vw;
+      font-size: 10vw;
     }
   }
 
