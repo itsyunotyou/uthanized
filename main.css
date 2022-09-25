@@ -277,7 +277,7 @@ button:hover, a:hover, button:link, button:active{
   }
 
   
-  @media screen and (min-width:801px) and (max-width:1281px) {
+  @media screen and (min-width:801px) {
     footer{
     position: absolute;
     float: right;
