@@ -277,30 +277,30 @@ button:hover, a:hover, button:link, button:active{
   }
 
   
-    .mobile footer{
-      font-size: 8vw;
-      right: 2vw;
-      position: absolute;
-      float: right;
-      z-index: 10;
-      bottom: 0;
-      font-family: cloud;
-      color: white;
-      text-align: right;
-      letter-spacing: 3px;
-    }
+  #mobile footer{
+    font-size: 8vw;
+    right: 2vw;
+    position: absolute;
+    float: right;
+    z-index: 10;
+    bottom: 0;
+    font-family: cloud;
+    color: white;
+    text-align: right;
+    letter-spacing: 3px;
+  }
 
-    .mobile .typewrite{
-      border: none;
-      background: none;
-      font-style: normal;
-      margin: 0;
-      text-decoration: none;
-      font-family: cloud;
-      padding-top: 2vh;
-      padding-left: 2vw;
-      font-size: 10vw;
-    }
+  #mobile .typewrite{
+    border: none;
+    background: none;
+    font-style: normal;
+    margin: 0;
+    text-decoration: none;
+    font-family: cloud;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    font-size: 10vw;
+  }
   
 
   
