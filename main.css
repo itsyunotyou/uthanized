@@ -276,8 +276,9 @@ button:hover, a:hover, button:link, button:active{
     letter-spacing: 1px;
   }
 
-
-  footer{
+  
+  @media (min-width:801px) {
+    footer{
     position: absolute;
     float: right;
     z-index: 10;
@@ -288,7 +289,16 @@ button:hover, a:hover, button:link, button:active{
     color: white;
     text-align: right;
     letter-spacing: 3px;
+    }
   }
+
+  @media (min-width:320px) {
+    footer{
+      font-size: 2vh;
+      right: 2vh;
+    }
+  }
+
 
  
 
