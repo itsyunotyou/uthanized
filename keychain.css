@@ -27,7 +27,7 @@ html, body{
   caret-color: transparent;
   height: 100%;
   margin: 0;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
