@@ -63,6 +63,9 @@ body{
 }
 
 
+p{
+  display: none;
+}
 
 .container {
   margin-top: 1%;
