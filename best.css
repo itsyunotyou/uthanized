@@ -1,0 +1,15 @@
+#full{
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+#small{
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+
+#small:hover + #full {
+    display: block;
+  }
