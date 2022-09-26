@@ -18,12 +18,10 @@ html, body{
 }
 
 
-#key{
-    width: 100vw;
-}
+
 
   #key img{
-    width: 100vw;
+    width: 100%;
     object-fit: contain;
     overflow: hidden;
   }
@@ -42,37 +40,88 @@ html, body{
     position: absolute;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: 20vw;
+    width: 60vw;
   }
 
   .baby{ 
     position: absolute;
     z-index: 2;
-    top: 20vw;
+    top: 20vh;
     left: 0;
+    width: 70vw;
 
   }
 
   .boy{ 
     position: absolute;
     z-index: 3;
-    bottom: -40vh;
+    top: 5vw;
     right: 0;
+    width: 40vw;
 
   }
 
   .ball{ 
     position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 20vw;
+    z-index: 4;
+    top: 10vh;
+    left: 0;
+    width: 40vw;
 
   }
 
   .bug{ 
     position: absolute;
-    z-index: 2;
-    top: 10vh;
+    z-index: 5;
+    top: 40vh;
+    left: -20vw;
+    width: 70vw;
+
+  }
+
+  .butter{ 
+    position: absolute;
+    z-index: 6;
+    top: 0;
     left: 0;
+    width: 20vw;
+
+  }
+
+  .heels{ 
+    position: absolute;
+    z-index: 7;
+    top: 30vh;
+    left: 50vw;
+    width: 60vw;
+
+
+  }
+
+  .paint{ 
+    position: absolute;
+    z-index: 8;
+    top: 30vh;
+    left: 50vw;
+    width: 60vw;
+
+  }
+
+  .smoke{ 
+    position: absolute;
+    z-index: 9;
+    top: 20vh;
+    left: 50vw;
+    width: 30vw;
+
+  }
+
+  .snail{ 
+    position: absolute;
+    z-index: 10;
+    top: 20vh;
+    left: 20vw;
+    width: 70vw;
 
   }
