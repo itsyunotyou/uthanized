@@ -27,6 +27,7 @@ html, body{
   caret-color: transparent;
   height: 100%;
   margin: 0;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 }
 
 ::-webkit-scrollbar {
@@ -39,6 +40,7 @@ html, body{
   background-size: cover;
   background-color: black;
   background-image: url("back/mesh.JPG");
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 }
 
 .webp html, body{
@@ -46,6 +48,7 @@ html, body{
   background-attachment: fixed;
   background-size: cover;
   background-color: black;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 }
   
 .magic{
@@ -63,6 +66,7 @@ html, body{
   top: 20px;
   right: 20px;
   height: 100px;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 }
 
 
@@ -74,6 +78,7 @@ html, body{
   z-index: 20;
   top: 20px;
   right: 20px;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 
 }
 

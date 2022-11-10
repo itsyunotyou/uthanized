@@ -19,7 +19,7 @@ html {
 
 body{
   background-color: black;
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
   
 }
 
@@ -30,16 +30,16 @@ body{
   z-index: 20;
   top: 20px;
   right: 20px;
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
   height: 100px;
 }
 
 .home :link{
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 }
 
 .home :active{
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 }
 
 
@@ -51,7 +51,7 @@ body{
   z-index: 20;
   top: 20px;
   right: 20px;
-  cursor: url('https://github.com/itsyunotyou/uthanized/blob/a22901ee3a724143c265c8725036eef56ee6f45e/whee/target.png?raw=true'), auto;
+  cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/light.png?raw=true'), auto;
 }
 
 .home img{
