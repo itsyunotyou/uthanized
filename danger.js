@@ -150,3 +150,15 @@ window.addEventListener("load", function(){
 document.querySelector("#close12").addEventListener("click", function(){
     document.querySelector(".popup12").style.display = "none";
 });
+
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup13").style.display = "block";
+        },
+        1470
+    )
+});
+document.querySelector("#close12").addEventListener("click", function(){
+    document.querySelector(".popup12").style.display = "none";
+});
