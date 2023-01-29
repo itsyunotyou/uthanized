@@ -159,6 +159,45 @@ window.addEventListener("load", function(){
         1470
     )
 });
-document.querySelector("#close12").addEventListener("click", function(){
-    document.querySelector(".popup12").style.display = "none";
+document.querySelector("#close13").addEventListener("click", function(){
+    document.querySelector(".popup13").style.display = "none";
+});
+
+
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup14").style.display = "block";
+        },
+        1470
+    )
+});
+document.querySelector("#close14").addEventListener("click", function(){
+    document.querySelector(".popup14").style.display = "none";
+});
+
+
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup15").style.display = "block";
+        },
+        1470
+    )
+});
+document.querySelector("#close15").addEventListener("click", function(){
+    document.querySelector(".popup15").style.display = "none";
+});
+
+
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup16").style.display = "block";
+        },
+        1470
+    )
+});
+document.querySelector("#close16").addEventListener("click", function(){
+    document.querySelector(".popup16").style.display = "none";
 });

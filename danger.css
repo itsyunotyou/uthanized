@@ -275,12 +275,60 @@ body{
 .popup13{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/4aa2ecf7b4e68ef47d4c215f066695c78e4239b3/screens/money.png?raw=true');
     background-size: cover;
-    height: 300px;
-    width: 576px;
+    height: 600px;
+    width: 1145px;
     padding: 1px 20px;
     position: absolute;
-    z-index: 10;
-    transform: translate(-80%, -50%);
+    z-index: 4;
+    transform: translate(-70%, -30%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup14{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/19738a3852ee26ad52061663655030a42e6abe25/screens/akb.png?raw=true');
+    background-size: cover;
+    height: 300px;
+    width: 445px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 30;
+    transform: translate(-70%, -30%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup15{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/4aa2ecf7b4e68ef47d4c215f066695c78e4239b3/screens/money.png?raw=true');
+    background-size: cover;
+    height: 600px;
+    width: 1145px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 9;
+    transform: translate(-70%, -30%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup16{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/4aa2ecf7b4e68ef47d4c215f066695c78e4239b3/screens/money.png?raw=true');
+    background-size: cover;
+    height: 600px;
+    width: 1145px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 12;
+    transform: translate(-70%, -30%);
     left: 50%;
     top: 50%;
     font-family: "Poppins",sans-serif;
