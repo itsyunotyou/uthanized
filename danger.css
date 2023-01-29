@@ -272,6 +272,21 @@ body{
     text-align: center;
 }
 
+.popup13{
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/uranus.png?raw=true');
+    background-size: cover;
+    height: 300px;
+    width: 570px;
+    padding: 1px 20px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-120%, -50%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
 
 button{
     display: block;
