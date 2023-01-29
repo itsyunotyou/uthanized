@@ -32,68 +32,65 @@
 
 
 
-
-  .poem p{
-	line-height: 10px;
-	text-align: left;
-	margin-left: 2%;
-}
-.poem p a{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-	font-family: cloud;
-	font-size: 50px;
-	text-align: left;
-	letter-spacing: 3px;
+.flower-container{
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  border: 1px solid red;
+  height: 400px;
+  width: 400px;
 }
 
+.petal-container{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  transform: rotate(45deg);
+  animation: spin 1s;
 
-@keyframes blink {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+
+}
+
+
+
+.petal-container-wrapper{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+
+}
+
+.petal{
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  position: absolute;
+  transform: rotate(180deg);
+  border-radius: 0 50% 50% 50%;
+
+  overflow: hidden;
+  animation: spin 10s linear infinite;
+
+}
+
+.flower-center{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background-color: lemonyellow;
+  border: 1px solid yellow;
+  border-radius: 50%;
+  top: 100px;
+  left: 100px;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
   
-  .typewrite{
-    color: rgb(0, 0, 0);
-    padding: 1%;
-    border: none;
-    background: none;
-    font-family: cloud;
-    font-size: 40px;
-    display: block;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    cursor: url('https://github.com/itsyunotyou/uthanized/blob/94352c7f3c4450c3ed66f74528eae64f85d05826/whee/stronglight.png?raw=true'), auto;
-    letter-spacing: 3px;
-  }
-  .typewrite:after {
-    content: '_';
-    -webkit-animation: blink 400ms linear infinite alternate;
-    animation: blink 400ms linear infinite alternate;
-  }
-  
-
-  @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
-
-  .App {
-    font-family: 'Patrick Hand SC', cursive;
-    text-align: center;
   }
 
-  svg {
-    height: 80vh;
-    width: 80vw;
+  100%{
+    transform: rotate(360deg);
   }
-
-  .heading {
-    font-size: 48px;
-    color: #281616;
-  }
-
-  .petal:hover {
-    fill: #C1A1A1;
-    transition: 0.2s ease;
-    -webkit-transition: 0.3s ease;
-  }
+}
