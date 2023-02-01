@@ -1,7 +1,9 @@
 let lovesMeState = true;
 
 
-const petalNumbers = 24;
+const petalNumbers = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+
+
 const flower = document.getElementById("flower");
 for (var i = 0; i < petalNumbers; i++){
   const rotate = i /petalNumbers * 360;
@@ -13,4 +15,7 @@ window. toggleLovesMe = (petalKey)=>{
   lovesMeState = !lovesMeState;
   console.log("Toggle Love", petalKey);
   document.getElementById("lovesMe").innerHTML = "She   Loves Me" + (lovesMeState ? "."  : "  Not.")
+  const petal = document.getElementById('petal-'+petalKey);
+  petal.className += "disappears";
+  console.log("New petal!",petal);
 }

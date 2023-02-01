@@ -59,27 +59,26 @@
 
 
 .petal{
-  height: 100px;
-  width: 100px;
-  background-color: purple;
+  height: 200px;
+  width: 200px;
+  background-image: url(chain/backlabel.png);
+  background-size:contain;
   position: absolute;
   transform: rotate(180deg);
-  border-radius: 0 50% 50% 50%;
-  border: 2px solid white;
   overflow: hidden;
   pointer-events: auto;
 
 }
 
 .flower-center{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   position: absolute;
   background-color: yellow;
   border-radius: 100%;
-  top: 50px;
-  left: 50px;
-  z-index: -10;
+  top: 100px;
+  left: 100px;
+  z-index: 10;
 }
 
 @keyframes spin{
@@ -99,6 +98,16 @@
 
 @keyframes appear {
   0%{
+    transform: scale(0);
+  }
+}
+
+.disappears{
+  animation: disappear 1s ease-in-out;
+}
+
+@keyframes disappear{
+  100%{
     transform: scale(0);
   }
 }
