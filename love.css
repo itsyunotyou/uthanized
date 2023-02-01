@@ -31,12 +31,10 @@
   }
 
 
-
 .flower-container{
   position: absolute;
   top: 200px;
   left: 200px;
-  border: 1px solid red;
   height: 400px;
   width: 400px;
 }
@@ -44,11 +42,9 @@
 .petal-container{
   position: absolute;
   height: 400px;
-  width: 400px;
-  transform: rotate(45deg);
-  animation: spin 1s;
-
-
+  width: 400px; 
+  animation: spin 10s linear infinite;
+  pointer-events: none;
 }
 
 
@@ -57,8 +53,10 @@
   position: absolute;
   height: 400px;
   width: 400px;
+  pointer-events: none;
 
 }
+
 
 .petal{
   height: 100px;
@@ -67,21 +65,21 @@
   position: absolute;
   transform: rotate(180deg);
   border-radius: 0 50% 50% 50%;
-
+  border: 2px solid white;
   overflow: hidden;
-  animation: spin 10s linear infinite;
+  pointer-events: auto;
 
 }
 
 .flower-center{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   position: absolute;
-  background-color: lemonyellow;
-  border: 1px solid yellow;
-  border-radius: 50%;
-  top: 100px;
-  left: 100px;
+  background-color: yellow;
+  border-radius: 100%;
+  top: 50px;
+  left: 50px;
+  z-index: -10;
 }
 
 @keyframes spin{
@@ -92,5 +90,15 @@
 
   100%{
     transform: rotate(360deg);
+  }
+}
+
+.flower-container{
+  animation: 0.8s appear ease-in-out;
+}
+
+@keyframes appear {
+  0%{
+    transform: scale(0);
   }
 }

@@ -213,7 +213,7 @@ body{
     width: 570px;
     padding: 1px 20px;
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
@@ -229,7 +229,7 @@ body{
     width: 380px;
     padding: 1px 20px;
     position: absolute;
-    z-index: 10;
+    z-index: 11;
     transform: translate(20%, 70%);
     left: 50%;
     top: 50%;
@@ -279,7 +279,7 @@ body{
     width: 1145px;
     padding: 1px 20px;
     position: absolute;
-    z-index: 4;
+    z-index: 2;
     transform: translate(-70%, -30%);
     left: 50%;
     top: 50%;
@@ -291,12 +291,12 @@ body{
 .popup14{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/3906939d656c63e39be9e59868174ae99f7451ae/screens/akb.png?raw=true');
     background-size: cover;
-    height: 300px;
-    width: 445px;
+    height: 500px;
+    width: 745px;
     padding: 1px 20px;
     position: absolute;
-    z-index: 30;
-    transform: translate(-70%, -30%);
+    z-index: 10;
+    transform: translate(-2%, 20%);
     left: 50%;
     top: 50%;
     font-family: "Poppins",sans-serif;
@@ -305,14 +305,14 @@ body{
 }
 
 .popup15{
-    background-image: url('https://github.com/itsyunotyou/uthanized/blob/4aa2ecf7b4e68ef47d4c215f066695c78e4239b3/screens/money.png?raw=true');
+    background-image: url('https://github.com/itsyunotyou/uthanized/blob/3906939d656c63e39be9e59868174ae99f7451ae/screens/exposure.png?raw=true');
     background-size: cover;
-    height: 600px;
-    width: 1145px;
+    height: 300px;
+    width: 575px;
     padding: 1px 20px;
     position: absolute;
     z-index: 9;
-    transform: translate(-70%, -30%);
+    transform: translate(-140%, -140%);
     left: 50%;
     top: 50%;
     font-family: "Poppins",sans-serif;
@@ -323,12 +323,12 @@ body{
 .popup16{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/3906939d656c63e39be9e59868174ae99f7451ae/screens/email.png?raw=true');
     background-size: cover;
-    height: 600px;
-    width: 1145px;
+    height: 320px;
+    width: 560px;
     padding: 1px 20px;
     position: absolute;
-    z-index: 12;
-    transform: translate(-70%, -30%);
+    z-index: 1;
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     font-family: "Poppins",sans-serif;
