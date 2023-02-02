@@ -1,7 +1,7 @@
 let lovesMeState = true;
 
 
-const petalNumbers = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+const petalNumbers = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
 
 
 const flower = document.getElementById("flower");
@@ -14,7 +14,7 @@ for (var i = 0; i < petalNumbers; i++){
 window. toggleLovesMe = (petalKey)=>{
   lovesMeState = !lovesMeState;
   console.log("Toggle Love", petalKey);
-  document.getElementById("lovesMe").innerHTML = "She   Loves Me" + (lovesMeState ? "."  : "  Not.")
+  document.getElementById("lovesMe").innerHTML = (lovesMeState ? "好"  : "嫌")
   const petal = document.getElementById('petal-'+petalKey);
   petal.className += "disappears";
   console.log("New petal!",petal);

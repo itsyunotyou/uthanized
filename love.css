@@ -24,10 +24,12 @@
   
     font-family: cursive3;
     text-align: center;
-    color: black;
+    color: white;
     caret-color: transparent;
     height: 100%;
     margin: 0;
+    background-image: url(back/felt.jpeg);
+    background-size: cover;
   }
 
 
@@ -61,7 +63,7 @@
 .petal{
   height: 200px;
   width: 200px;
-  background-image: url(chain/backlabel.png);
+  background-image: url(chain/petal.png);
   background-size:contain;
   position: absolute;
   transform: rotate(180deg);
@@ -74,11 +76,13 @@
   height: 200px;
   width: 200px;
   position: absolute;
-  background-color: yellow;
-  border-radius: 100%;
+  background-image: url(chain/center.png);
+  background-size:contain;
   top: 100px;
   left: 100px;
-  z-index: 10;
+  z-index: 1;
+  animation: reverse spin 10s linear infinite;
+
 }
 
 @keyframes spin{
@@ -110,4 +114,12 @@
   100%{
     transform: scale(0);
   }
+}
+
+h2{
+  top: 60%;
+  left: 70%;
+  position: absolute;
+  font-family: cursive3;
+  font-size: 3em;
 }
