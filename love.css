@@ -123,3 +123,19 @@ h2{
   font-family: cursive3;
   font-size: 3em;
 }
+
+input[type="checkbox"] {
+  content: url('whee/haato.png');
+  display: block;
+  left: 70px;
+  width: 200px;
+  height: 200px;
+}
+input[type="checkbox"]:checked {
+  content: url('whee/byhaato.png');
+}
+.native-hidden {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
