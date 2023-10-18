@@ -1,44 +1,70 @@
-@font-face {
-    font-family: 'cursive3';
-    src: url('cursive/Cursive.ttf');
+
+  @font-face {
+    font-family: 'punk';
+    src: url('punk_rock_font/punk_rockf.ttf');
           font-weight: normal;
           font-style: normal;
   }
-  
+
   @font-face {
     font-family: 'cloud';
     src: url('cloude/Cloude_Regular_1.02.otf');
-          font-weight: normal;
-          font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'japan';
-    src: url('japanese/PixelMplus10-Regular.ttf');
-          font-weight: normal;
-          font-style: normal;
-  }
-  
+        font-weight: normal;
+        font-style: normal;
+    }
   
   html, body{ 
-  
-    font-family: cursive3;
-    text-align: center;
+
     color: white;
     caret-color: transparent;
     height: 100%;
     margin: 0;
-    background-image: url(back/felt.jpeg);
+    background-image: url(back/felt.png);
     background-size: cover;
+    scroll-behavior: none;
+    overflow: hidden;
   }
 
+  #bgvid{
+
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+   
+  }
+  .noise {
+    width: 200vw;
+    height: 200vh;
+   
+    
+    z-index: 1;
+  }
+
+  #lovesMe{
+    font-family: 'punk';
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    text-align: left;
+    left: 50vw;
+    top: 75vh;
+    z-index: 0;
+    animation:jitter 200ms linear infinite;
+  }
+
+  
+@keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }
 
 .flower-container{
   position: absolute;
-  top: 200px;
-  left: 200px;
+  top: 20vh;
+  left: 20vw;
   height: 400px;
   width: 400px;
+  z-index: 1;
 }
 
 .petal-container{
@@ -77,7 +103,7 @@
   width: 200px;
   position: absolute;
   background-image: url(chain/center.png);
-  background-size:contain;
+  background-size: contain;
   top: 100px;
   left: 100px;
   z-index: 1;
@@ -116,13 +142,7 @@
   }
 }
 
-h2{
-  top: 60%;
-  left: 70%;
-  position: absolute;
-  font-family: cursive3;
-  font-size: 3em;
-}
+
 
 input[type="checkbox"] {
   content: url('whee/haato.png');

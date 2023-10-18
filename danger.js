@@ -2,19 +2,26 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup1").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
+            
         },
         1000
     )
 });
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup1").style.display = "none";
+    
 });
+
 
 
 window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup2").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1200
     )
@@ -28,18 +35,23 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup3").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1500
     )
 });
 document.querySelector("#close3").addEventListener("click", function(){
     document.querySelector(".popup3").style.display = "none";
+    
 });
 
 window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup4").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1500
     )
@@ -52,6 +64,8 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup5").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1100
     )
@@ -65,6 +79,8 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup6").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1470
     )
@@ -78,8 +94,10 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup7").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
-        1470
+        1460
     )
 });
 document.querySelector("#close7").addEventListener("click", function(){
@@ -91,8 +109,10 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup8").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
-        1470
+        1500
     )
 });
 document.querySelector("#close8").addEventListener("click", function(){
@@ -104,6 +124,8 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup9").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1470
     )
@@ -117,8 +139,10 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup10").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
-        1470
+        1320
     )
 });
 document.querySelector("#close10").addEventListener("click", function(){
@@ -130,6 +154,8 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup11").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1470
     )
@@ -143,8 +169,10 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup12").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
-        1470
+        1350
     )
 });
 document.querySelector("#close12").addEventListener("click", function(){
@@ -155,6 +183,8 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup13").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
         1470
     )
@@ -168,8 +198,10 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup14").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
-        1470
+        1200
     )
 });
 document.querySelector("#close14").addEventListener("click", function(){
@@ -181,8 +213,10 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup15").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
-        1470
+        1420
     )
 });
 document.querySelector("#close15").addEventListener("click", function(){
@@ -194,8 +228,10 @@ window.addEventListener("load", function(){
     setTimeout(
         function open(event){
             document.querySelector(".popup16").style.display = "block";
+            var audio = new Audio('audio/error.mp3');
+            audio.play();
         },
-        1470
+        1300
     )
 });
 document.querySelector("#close16").addEventListener("click", function(){

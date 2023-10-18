@@ -15,8 +15,16 @@
   
 
 body{
-    background-color: #ffffff;
+    background: 
+        repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
+        repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px;
+    background-blend-mode: difference;
+    animation: b .2s infinite alternate;
+
 }
+    @keyframes b{
+    100% {background-position: 50% 0, 60% 50%}
+    }
 
 .poem{
     position: absolute;
@@ -41,13 +49,14 @@ body{
 
 .giphy-embed{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 50%;
     left: 50%;
     margin-top: -50px;
     margin-left: -50px;
-    width: 50px;
-    height: 50px;
+    height: 30px;
+    width: 30px;
+
 }
 
 @keyframes blink {
@@ -81,8 +90,8 @@ body{
 .popup1{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/alarm.png?raw=true');
     background-size: cover;
-    height: 400px;
-    width: 500px;
+    height: 200px;
+    width: 300px;
     padding: 1px 20px;
     position: absolute;
     z-index: 4;
@@ -91,14 +100,16 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    justify-items: right;
+    border: 2px outset;
 }
 
 .popup2{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/amber.png?raw=true');
     background-size: cover;
-    height: 400px;
-    width: 500px;
+    height: 200px;
+    width: 300px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -107,14 +118,15 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 .popup3{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/asshole.png?raw=true');
     background-size: cover;
-    height: 400px;
-    width: 700px;
+    height: 200px;
+    width: 500px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -123,7 +135,8 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 .popup4{
@@ -139,13 +152,14 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 .popup5{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/link.png?raw=true');
     background-size: cover;
-    height: 400px;
-    width: 500px;
+    height: 100px;
+    width: 400px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -153,14 +167,17 @@ body{
     left: 50%;
     top: 50%;
     display: none;
+    text-align: right;
+    border: 2px outset;
+
 }
 
 
 .popup6{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/heart.png?raw=true');
     background-size: cover;
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -169,14 +186,15 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 .popup7{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/luv.png?raw=true');
     background-size: cover;
     height: 200px;
-    width: 300px;
+    width: 200px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -185,15 +203,16 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 
 .popup8{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/nonumbers.png?raw=true');
     background-size: cover;
-    height: 250px;
-    width: 300px;
+    height: 150px;
+    width: 200px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -202,7 +221,8 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 
@@ -219,14 +239,15 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 .popup10{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/stars.png?raw=true');
     background-size: cover;
-    height: 200px;
-    width: 380px;
+    height: 220px;
+    width: 280px;
     padding: 1px 20px;
     position: absolute;
     z-index: 11;
@@ -235,15 +256,16 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 
 .popup11{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/whereyouat.png?raw=true');
     background-size: cover;
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 200px;
     padding: 1px 20px;
     position: absolute;
     z-index: 20;
@@ -252,7 +274,9 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
+
 }
 
 
@@ -260,7 +284,7 @@ body{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/535d185f6bdb954fdc2e61c74d3ebf2603832b7e/screens/uranus.png?raw=true');
     background-size: cover;
     height: 300px;
-    width: 570px;
+    width: 470px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -270,13 +294,14 @@ body{
     font-family: "Poppins",sans-serif;
     display: none;
     text-align: center;
+    border: 2px outset;
 }
 
 .popup13{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/4aa2ecf7b4e68ef47d4c215f066695c78e4239b3/screens/money.png?raw=true');
     background-size: cover;
-    height: 600px;
-    width: 1145px;
+    height: 500px;
+    width: 1045px;
     padding: 1px 20px;
     position: absolute;
     z-index: 2;
@@ -285,14 +310,15 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
 }
 
 .popup14{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/3906939d656c63e39be9e59868174ae99f7451ae/screens/akb.png?raw=true');
     background-size: cover;
-    height: 500px;
-    width: 745px;
+    height: 400px;
+    width: 645px;
     padding: 1px 20px;
     position: absolute;
     z-index: 10;
@@ -301,14 +327,16 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
+    justify-items: right;
 }
 
 .popup15{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/3906939d656c63e39be9e59868174ae99f7451ae/screens/exposure.png?raw=true');
     background-size: cover;
-    height: 300px;
-    width: 575px;
+    height: 200px;
+    width: 475px;
     padding: 1px 20px;
     position: absolute;
     z-index: 9;
@@ -317,33 +345,65 @@ body{
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    text-align: right;
+    border: 2px outset;
+    justify-items: right;
 }
 
 .popup16{
     background-image: url('https://github.com/itsyunotyou/uthanized/blob/3906939d656c63e39be9e59868174ae99f7451ae/screens/email.png?raw=true');
     background-size: cover;
-    height: 320px;
-    width: 560px;
+    height: 400px;
+    width: 760px;
     padding: 1px 20px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     font-family: "Poppins",sans-serif;
     display: none;
-    text-align: center;
+    border: 2px outset;
+
 }
 
 button{
-    display: block;
-    margin:  0 0 20px auto;
-    background-color: transparent;
-    font-family: cloud;
-    font-size: 70px;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    justify-self: right;
+    font-size: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+  
+    background-color: #c0c0c0;
+  border: 2px outset;
+  outline: none;
+  cursor: pointer;
+
+  
+  &:hover {
+    border: 2px inset;
+
+
+  }
+
+
+    }
+
+    .place-image{
+        display:none;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 10;
+    }
+
+    button:hover .place-image{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 10;
+    }
+    

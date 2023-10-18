@@ -16,7 +16,7 @@ for (var i = 0; i < petalNumbers; i++){
 window. toggleLovesMe = (petalKey)=>{
 
   lovesMeState = !lovesMeState;
-  document.getElementById("lovesMe").innerHTML = (lovesMeState ? "Loves Me"  : "Loves Me Not")
+  document.getElementById("lovesMe").innerHTML = (lovesMeState ? "好き"  : "嫌い")
   const petal = document.getElementById('petal-'+petalKey);
   petal.className += "disappears";
 
@@ -25,11 +25,31 @@ window. toggleLovesMe = (petalKey)=>{
   console.log("Count petals:", petalCount)
   console.log("Get to petals:", petalNumbers)
   
-  if (petalCount == petalNumbers) {
-      window.location.href = "best.html";
 
-  }
 
 
 }
 
+
+function btntest_onclick(){
+    if (document.getElementById('petal') == '0') {
+      window.location.href = "best.html";
+
+  }
+};
+
+$(function(){
+  var $jittery = $('.jittery'),
+      aText    = $jittery.text().split(''),
+      letters = '';
+  
+  for(var i = 0; i < aText.length; i++){
+    letters += '<span>'+aText[i]+'</span>';
+  }
+  
+  $jittery.empty().append(letters);
+  
+  $.each($('span', $jittery), function(i){
+    $(this).css('animation-delay', '-'+i+'70ms');
+  });
+});
