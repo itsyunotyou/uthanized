@@ -15,11 +15,11 @@
   
   html, body{ 
 
-    color: white;
+    color: rgb(255, 255, 255);
     caret-color: transparent;
     height: 100%;
     margin: 0;
-    background-image: url(back/felt.png);
+    background-image: url(back/love.jpeg);
     background-size: cover;
     scroll-behavior: none;
     overflow: hidden;
@@ -44,19 +44,17 @@
   }
 
   #lovesMe{
-    font-family: 'punk';
+    font-family: 'Times New Roman';
     font-size: 50px;
-    color: white;
+    color: rgb(0, 0, 0);
     position: absolute;
     text-align: left;
     left: 50vw;
     top: 75vh;
     z-index: 0;
-    animation:jitter 200ms linear infinite;
   }
 
   
-@keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }
 
 .flower-container{
   position: absolute;
@@ -158,4 +156,8 @@ input[type="checkbox"]:checked {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+#wordDisplay {
+  display: none;
 }

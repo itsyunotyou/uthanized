@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: 'punk';
+    src: url('punk_rock_font/punk_rockf.ttf');
+          font-weight: normal;
+          font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'cloud';
+    src: url('cloude/Cloude_Regular_1.02.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+  
+  html, body{ 
+
+    color: white;
+    caret-color: transparent;
+    height: 100%;
+    margin: 0;
+    background-image: url(back/neep.JPG);
+    background-size: cover;
+    scroll-behavior: none;
+    overflow: hidden;
+  }
+
+  #bgvid{
+
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+   
+  }
+  .noise {
+    width: 200vw;
+    height: 200vh;
+   
+    
+    z-index: 1;
+  }
+
+  #lovesMe{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    text-align: left;
+    left: 50vw;
+    top: 75vh;
+    z-index: 0;
+    animation:jitter 200ms linear infinite;
+  }
+
+  
+@keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }
+
+.flower-container{
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+}
+
+.petal-container{
+  position: absolute;
+  height: 400px;
+  width: 400px; 
+  animation: spin 10s linear infinite;
+  pointer-events: none;
+}
+
+
+
+.petal-container-wrapper{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  pointer-events: none;
+
+}
+
+
+.petal{
+  height: 200px;
+  width: 200px;
+  background-image: url(chain/petal.png);
+  background-size:contain;
+  position: absolute;
+  transform: rotate(180deg);
+  overflow: hidden;
+  pointer-events: auto;
+
+}
+
+.flower-center{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background-image: url(chain/center.png);
+  background-size: contain;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  animation: reverse spin 10s linear infinite;
+
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.flower-container{
+  animation: 0.8s appear ease-in-out;
+}
+
+@keyframes appear {
+  0%{
+    transform: scale(0);
+  }
+}
+
+.disappears{
+  animation: disappear 1s ease-in-out;
+}
+
+@keyframes disappear{
+  100%{
+    transform: scale(0);
+  }
+}
+
+
+
+input[type="checkbox"] {
+  content: url('whee/haato.png');
+  display: block;
+  left: 70px;
+  width: 200px;
+  height: 200px;
+}
+input[type="checkbox"]:checked {
+  content: url('whee/byhaato.png');
+}
+.native-hidden {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

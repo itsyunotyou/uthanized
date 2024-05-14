@@ -2,8 +2,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="main.css"></link>
+
+        <script>
+          function downLoad(){
+            if (document.all){
+                document.all["layer1"].style.visibility="hidden";
+                document.all["layer2"].style.visibility="visible";
+            } else if (document.getElementById){
+                node = document.getElementById("layer1").style.visibility='hidden';
+                node = document.getElementById("layer2").style.visibility='visible';
+            }
+          }
+        </script>
       </head>
-    <body> 
+    <body onload="downLoad()">
+      <div id="layer1" class="layer1_class">
+        <table width="100%">
+          <tr>
+            <td text-align="center"><strong><em>Please wait while this page is loading...</em></strong></p></td>
+          </tr>
+        </table>
+      </div>
 
     <div id="contents">
 
@@ -25,11 +44,11 @@
       <div class="menu">
           
         <h2>Projects...</h2>
+        <a href="https://boxofdrafts.com/"><button>Box Of Drafts (2024)</button></a>
         <a href="sleeping"><button>Sleeping Through Summer (2021)</button></a>
         <a href="tv"><button>The TV Is Always On (2018-2021)</button></a>
         <a href="omamori"><button>Lucky Charms (2021-)</button></a>
-        <a><button>WIP</button></a>
-        <a><button>WIP</button></a>
+        <a href="daddy"><button>Daddy (2020)</button></a>
       
       </div>
     
@@ -76,6 +95,25 @@
       <script src='main.js'></script>
 
       <script type="text/javascript">
+
+function load(url) {
+    // display loading image here...
+    document.getElementById('loadingImg').visible = true;
+    // request your data...
+    var req = new XMLHttpRequest();
+    req.open("POST", url, true);
+
+    req.onreadystatechange = function () {
+        if (req.readyState == 4 && req.status == 200) {
+            // content is loaded...hide the gif and display the content...
+            if (req.responseText) {
+                document.getElementById('content').innerHTML = req.responseText;
+                document.getElementById('loadingImg').visible = false;
+            }
+        }
+    };
+    request.send(vars);
+}
 
         if (navigator.userAgent.match(/Android/i) ||
             navigator.userAgent.match(/webOS/i) ||

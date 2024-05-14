@@ -1,37 +1,27 @@
-
 let dots = [];
 let guideDots = [];
 let currentIndex = 0;
 let drawingCompleted = false;
 
-let lastPos = { x: 122, y: 240 };
-let currentPos = { x: 122, y: 240 };
-let dotSize = 12;
+let lastPos = { x: 340, y: 170 };
+let currentPos = { x: 340, y: 170 };
+let dotSize = 10;
 
 const guidePoints = [
 {x: 162, y: 218},
-{x: 122, y: 240},
-{x: 266, y: 308},
-{x: 310, y: 218},
-{x: 300, y: 314},
-{x: 458, y: 360},
-{x: 430, y: 316},
-{x: 458, y: 220},
-{x: 448, y: 170},
-{x: 500, y: 216},
-{x: 472, y: 310},
-{x: 614, y: 268},
-{x: 698, y: 310},
-{x: 732, y: 228},
-{x: 710, y: 170},
-{x: 610, y: 216},
-{x: 554, y: 186},
-{x: 614, y: 146},
-{x: 472, y: 88},
-{x: 404, y: 120},
-{x: 208, y: 130},
-{x: 110, y: 186},
-{x: 162, y: 218},
+{x: 340, y: 170}, //1//
+{x: 740, y: 500},
+{x: 980, y: 500},
+{x: 1210, y: 670},
+{x: 1210, y: 720},
+{x: 740, y: 720},
+{x: 458, y: 500}, //7//
+{x: 448, y: 720},
+{x: 340, y: 720},
+{x: 330, y: 560}, //10//
+{x: 250, y: 460},
+{x: 260, y: 250}, //12//
+
 ];
 
 class Dot {
@@ -40,18 +30,18 @@ class Dot {
     this.y = y;
   }
   connect(px, py) {
-    stroke(90);
+    stroke(3);
     line(this.x, this.y, px, py);
   }
-  plot(fillColor, strokeColor) {
+  plot(fillColor) {
     fill(fillColor);
-    stroke(strokeColor);
+    stroke(fillColor);
     strokeWeight(3);
     ellipse(this.x, this.y, dotSize);
   }
   plotText(txt) {
-    fill(90);
-    stroke(222);
+    fill(0, 0, 0);
+    strokeWeight(0);
     textSize(20);
     text(txt, this.x+8, this.y+10);
   }
@@ -64,14 +54,28 @@ class Dot {
 }
 
 function setup() {
-  createCanvas(900, 450);  
+  createCanvas(windowWidth, windowHeight);
   for (let i = 1; i < guidePoints.length; i++) {
     guideDots.push(new Dot(guidePoints[i].x, guidePoints[i].y));
+
+    
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+
+// prevents touch gestures on touch screens from dragging the page around 
+function touchMoved() {
+  return false
+}
+
+
+
 function draw() {
-  background(222);
+  background(255, 255, 255);
   textFont('Times');
     
   for (let i = 0; i < guideDots.length; i++) {
@@ -80,37 +84,43 @@ function draw() {
   }
 
   for (let i = 0; i < dots.length; i++) {
-    dots[i].plot(90, 90);
+    dots[i].plot(0, 0, 0);
     if (i > 0) {
       dots[i].connect(dots[i-1].x, dots[i-1].y);
     }
   }
  
   if (currentIndex == 0) {
-    fill(222, 55, 111);
-    stroke(222);
-    textSize(24);
-    text("^ Start here!", guideDots[0].x-5, guideDots[0].y+30);    
+    fill(0, 0, 0);
+    strokeWeight(0);
+    textSize(15);
+    text("☆", guideDots[0].x-5, guideDots[0].y+30);    
   }
   else if (!drawingCompleted) {
-    stroke(222, 55, 111);
+    stroke(0, 0, 0);
     strokeWeight(3);
     line(lastPos.x, lastPos.y, currentPos.x, currentPos.y);
   }
   else {
     fillVertex();
-    fill(90);
-    stroke(222);
+    fill(0, 0, 0);
+    stroke(0, 0, 0);
     strokeWeight(5);
-    ellipse(guideDots[length].x+80, guideDots[length].y-60, 30);
-    textSize(24);
-    text("Thanks for completing!", 40, 60);    
+    myURL();
+    if (mouseIsPressed === true) {
+      sprayPaint()
+    }
+
   }
 }
 
+function myURL() {
+  window.location.replace('comment.html');
+}
+
 function fillVertex() {
-  stroke(90);
-  fill(222, 55, 111);
+  stroke(5);
+  fill(0, 0, 0);
   beginShape();
   for (let i = 0; i < dots.length; i++) {
     vertex(dots[i].x, dots[i].y);
@@ -137,4 +147,3 @@ function mouseMoved() {
   currentPos.x = mouseX;  
   currentPos.y = mouseY;
 }
-
